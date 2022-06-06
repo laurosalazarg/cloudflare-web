@@ -67,7 +67,7 @@ class About extends Component {
 
 
                   <div class="button-group text-center text-md-left pt--60 pt_md--40 pt_sm--40">
-                     <a class="rn-btn" href="../../files/Lauro_Salazar-resume-current.pdf"><span>Download My CV</span></a>
+                     <a class="rn-btn" href="././files/Lauro_Salazar-resume-current.pdf" target="_blank" onClick={this.handleEntailmentRequest.bind(this)}><span>Download My CV</span></a>
                      <a class="rn-btn" href="mailto:lauro.salazar@slzr.cloud"><span>Contact Me</span></a>
                   </div>
                </div>
