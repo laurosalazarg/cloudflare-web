@@ -20,8 +20,8 @@
             imJs.mobileMenuActive();
             imJs.vedioActivation();
             imJs.stickyHeader();
-            imJs.smothScroll();
-            imJs.smothScroll_Two();
+            // imJs.smothScroll();
+            // imJs.smothScroll_Two();
             imJs.stickyAdjust();
             imJs.testimonialActivation();
             imJs.contactForm();
