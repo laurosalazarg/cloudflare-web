@@ -52,6 +52,8 @@ class App extends Component {
         <Header data={this.state.hasMounted}/>
         <Body data={this.state.hasMounted}/>
         <Footer data={this.state.hasMounted}/>
+
+        
       </div>
     );
     
