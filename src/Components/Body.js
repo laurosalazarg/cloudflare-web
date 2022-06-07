@@ -47,7 +47,7 @@ class About extends Component {
 
 
                   <div class="thumbnail">
-                     <img src="./images/slider/head.jpeg" alt="Personal Portfolio" />
+                     <img src="https://imagedelivery.net/eGT8p8hShyo3UH9oj_BtBw/e1cb1110-d84c-49fd-8069-c84432340e00/public" alt="Personal Portfolio" />
 
 
 
@@ -192,6 +192,9 @@ class About extends Component {
 </div>
 </div>
 </div>
+
+
+
       );
    }
 }
