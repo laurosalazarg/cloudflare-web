@@ -6,18 +6,23 @@ import Body from './Components/Body';
 import Footer from './Components/Footer';
 
 class App extends Component {
-
-  constructor(props){
+  
+  constructor(props) {
     super(props);
-    this.state = {
-      foo: 'bar',
-      resumeData: {}
-    };
-
-    ReactGA.initialize('LS-02132022-1');
-    ReactGA.pageview(window.location.pathname);
-
+    this.state = { hasMounted: false };
   }
+    
+  // constructor(props){
+  //   super(props);
+  //   this.state = {
+  //     foo: 'bar',
+  //     resumeData: {}
+  //   };
+
+  //   ReactGA.initialize('LS-02132022-1');
+  //   ReactGA.pageview(window.location.pathname);
+
+  // }
 
   // getResumeData(){
   //   $.ajax({
@@ -34,18 +39,22 @@ class App extends Component {
   //   });
   // }
 
-  // componentDidMount(){
-  //   this.getResumeData();
-  // }
+  componentDidMount() {
+    this.setState({ hasMounted: true });
+  }
+
 
   render() {
+
+
     return (
       <div className="App">
-        <Header data={this.state.resumeData.main}/>
-        <Body data={this.state.resumeData.main}/>
-        <Footer data={this.state.resumeData.main}/>
+        <Header data={this.state.hasMounted}/>
+        <Body data={this.state.hasMounted}/>
+        <Footer data={this.state.hasMounted}/>
       </div>
     );
+    
   }
 }
 

@@ -5,6 +5,10 @@ import pdf from './Lauro_Salazar-resume-current.pdf'
 class About extends Component {
    render() {
 
+      // if (this.state.loading) {      return null; //app is not ready (fake request is in process)    
+      // }
+
+
       //  if(this.props.data){
       //    var name = this.props.data.name;
       //    var profilepic= "images/"+this.props.data.image;
